@@ -1,13 +1,9 @@
+#pragma once
 #include "Image.h"
-#include <iostream>
 #include <fstream>
 
-
-Image::Image(const char* filepath)
+Image::Image(const char* filepath):Filepath(filepath)
 {
-	if (!filepath)
-		throw std::invalid_argument("Nullptr");
-
 
 
 }

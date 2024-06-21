@@ -1,8 +1,10 @@
 #pragma once
-#include "OpenedSessions.h"
+#include "vector.hpp"
+#include "Session.h"
+
 class Command
 {
-	virtual void execute(OpenedSessions& sessions)=0;
+	virtual void execute(Vector<Session>& openedSessions)=0;
 	virtual ~Command();
 };
 

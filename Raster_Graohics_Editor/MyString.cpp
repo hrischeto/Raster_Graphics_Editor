@@ -1,3 +1,4 @@
+#pragma once
 #include "MyString.h"
 #pragma warning (disable : 4996)
 
@@ -156,3 +157,33 @@ MyString operator+(const MyString& lhs, const MyString& rhs)
     return result;
 }
 
+
+bool operator==(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) == 0;
+}
+
+bool operator!=(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) != 0;
+}
+
+bool operator<(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) < 0;
+}
+
+bool operator<=(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) <= 0;
+}
+
+bool operator>(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) > 0;
+}
+
+bool operator>=(const MyString& lhs, const MyString& rhs)
+{
+    return std::strcmp(lhs.c_str(), rhs.c_str()) >= 0;
+}

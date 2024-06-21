@@ -1,3 +1,4 @@
+#pragma once
 #include "Bitset.h"
 
 void DynamicSet::free()

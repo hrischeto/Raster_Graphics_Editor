@@ -20,6 +20,7 @@ public:
 
     const char* c_str() const;
 
+
     MyString& operator+=(const MyString& other);
 
     char& operator[](size_t index);
@@ -41,3 +42,10 @@ private:
     size_t _size;
     size_t _allocatedDataSize;
 };
+
+bool operator==(const MyString& lhs, const MyString& rhs);
+bool operator!=(const MyString& lhs, const MyString& rhs);
+bool operator<(const MyString& lhs, const MyString& rhs);
+bool operator<=(const MyString& lhs, const MyString& rhs);
+bool operator>(const MyString& lhs, const MyString& rhs);
+bool operator>=(const MyString& lhs, const MyString& rhs);

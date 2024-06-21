@@ -1,16 +1,16 @@
 #pragma once
-#include "vector.hpp"
 #include "MyString.h"
+
 class Image
 {
 public:
-	Image(const char* filePath);
+	Image(const char* filepath);
 	virtual ~Image();
-	virtual Image* clone();
+	virtual Image* clone() const =0;
 private:
 	MyString Filepath;
 	unsigned magicNumber = 0;
-	unsigned height = 0;
 	unsigned width = 0;
+	unsigned height = 0;
 };
 

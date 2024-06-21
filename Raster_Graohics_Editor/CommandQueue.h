@@ -2,18 +2,6 @@
 #include "Command.h"
 class CommandQueue
 {
-		Command* data;
-		size_t capacity;
-		size_t size;
-
-		size_t get;
-		size_t put;
-
-		void resize();
-
-		void moveFrom(CommandQueue&& other);
-		void copyFrom(const CommandQueue& other);
-		void free();
 	public:
 		CommandQueue();
 
@@ -31,6 +19,20 @@ class CommandQueue
 		bool isEmpty() const;
 
 		~CommandQueue();
+
+private:
+
+	void moveFrom(CommandQueue&& other);
+	void copyFrom(const CommandQueue& other);
+	void free();
+	void resize();
+
+	Command** data;
+	size_t capacity;
+	size_t size;
+
+	size_t get;
+	size_t put;
 
 };
 
