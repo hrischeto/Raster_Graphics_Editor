@@ -4,13 +4,13 @@
 class Image
 {
 public:
-	Image(const char* filepath);
+	Image(const char* filepath, unsigned magicNumber, unsigned width, unsigned height);
 	virtual ~Image();
 	virtual Image* clone() const =0;
 private:
 	MyString Filepath;
-	unsigned magicNumber = 0;
-	unsigned width = 0;
-	unsigned height = 0;
+	const unsigned magicNumber = 0;
+	const unsigned width = 0;
+	const unsigned height = 0;
 };
 

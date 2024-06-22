@@ -1,9 +1,6 @@
 #pragma once
 #include "Image.h"
-#include <fstream>
 
-Image::Image(const char* filepath):Filepath(filepath)
-{
-
-
-}
+Image::Image(const char* filepath, unsigned magicNumber, unsigned width, unsigned height):Filepath(filepath),
+													magicNumber(magicNumber), width(width), height(height){}
+Image:: ~Image() = default;
