@@ -1,12 +1,34 @@
 #include "CommandFactory.h"
 #include "load.h"
+#include "Close.h"
+#include "Switch.h"
 
-Command* CommandFactory(MyString command, std::stringstream& ss)
-	{
+Command* CommandFactory::operator()(MyString command, std::stringstream& ss)
+{
 	if (command == "load")
 	{
-		return new Load(ss);
+		Load* newCommand = new Load(ss);
+		currentSession = newCommand->getId();
+		openedSessions++;
+		return newCommand;
 	}
-	else if ()
+	else if (command == "close")
 	{
+		openedSessions--;
+		return new Close(currentSession++);
 	}
+
+	else if (command == "switch")
+	{
+		 Switch newCommand(ss);
+
+		 newCommand.execute(currentSession, openedSessions);
+		 newCommand.printMessege();
+		return nullptr;
+	}
+
+	else if (command == "grayscale")
+	{
+
+	}
+}

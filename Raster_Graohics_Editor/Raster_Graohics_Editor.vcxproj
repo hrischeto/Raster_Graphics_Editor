@@ -145,6 +145,8 @@
     <ClCompile Include="PPM.cpp" />
     <ClCompile Include="Engine.cpp" />
     <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionInfo.cpp" />
+    <ClCompile Include="Switch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\PartialFunctionOld\PartialFunction\vector.hpp" />
@@ -165,6 +167,8 @@
     <ClInclude Include="PPM.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="Session.h" />
+    <ClInclude Include="SessionInfo.h" />
+    <ClInclude Include="Switch.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

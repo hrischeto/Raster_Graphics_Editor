@@ -8,6 +8,7 @@ public:
 	Load(std::stringstream& ss);
 	void execute(Vector<Session>& openedSessions) override;
 	void printMessege() const override;
+	unsigned getId() const;
 
 private:
 

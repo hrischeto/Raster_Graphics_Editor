@@ -10,21 +10,17 @@ bool processInput(std::stringstream& ss, Engine& engine)
 	char buffer[BUFFER_SIZE];
 	ss.getline(buffer, BUFFER_SIZE, '/n');
 	MyString command(buffer);//to use ==
-	
+	CommandFactory factory;
+
 	if (command == "exit")
 	{
 		//might ask to save
 		return 0;
 	}
-	if (command == "help")
-	{
-		//print all commands
-		return 1;
-	}
 	else
 	{
-		engine.addCommand(CommandFactory(command, ss));
-		engine.getMessege();
+		engine.addCommand(factory(command, ss));
+		//engine.getMessege();
 		return 1;
 	}
 }

@@ -2,5 +2,11 @@
 #include "Command.h"
 #include <sstream>
 
-Command* CommandFactory(MyString command, std::stringstream& ss);
+class CommandFactory {
+public:
+	unsigned currentSession = 0;
+	unsigned openedSessions = 0;
+	Command* operator()(MyString command, std::stringstream& ss);
+};
+
 

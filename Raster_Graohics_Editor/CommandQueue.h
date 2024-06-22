@@ -30,7 +30,6 @@ private:
 	Command** data = nullptr;
 	size_t capacity=0;
 	size_t size=0;
-	unsigned currentSession = 0;
 
 	size_t get;
 	size_t put;
