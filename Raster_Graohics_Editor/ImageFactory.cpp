@@ -102,7 +102,7 @@ static Image* readP1(std::ifstream& ifs, int width, int height, const char* file
 	if (!filepath)
 		throw std::runtime_error("Nullptr recieved");
 
-	DynamicSet* data = new DynamicSet(width);
+	DynamicSet* data = new DynamicSet[height];
 	readP1Matrix(ifs, width, height, data);
 	return new PBM(filepath, magicNumber, width, height, data);
 }

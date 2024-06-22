@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <sstream>
 #include "Engine.h"
@@ -6,15 +5,28 @@
 
 constexpr int BUFFER_SIZE = 100;
 
-bool processInput(std::stringstream& ss)
+bool processInput(std::stringstream& ss, Engine& engine)
 {
 	char buffer[BUFFER_SIZE];
 	ss.getline(buffer, BUFFER_SIZE, '/n');
 	MyString command(buffer);//to use ==
-	//return 0 when exit
-	//for help print all commands
-	//print a messege after every command
-	//for commands with contex give the ss in the constuctor
+	
+	if (command == "exit")
+	{
+		//might ask to save
+		return 0;
+	}
+	if (command == "help")
+	{
+		//print all commands
+		return 1;
+	}
+	else
+	{
+		engine.addCommand(CommandFactory(command, ss));
+		engine.getMessege();
+		return 1;
+	}
 }
 int main()
 {
@@ -22,10 +34,11 @@ int main()
 
 	bool run = 1;
 	MyString input;
+
 	while (run)
 	{
 		std::cin >> input;
 		std::stringstream ss(input.c_str());
-		run=processInput(ss);
+		run=processInput(ss,engine);
 	}
 }

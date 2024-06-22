@@ -1,11 +1,17 @@
 #pragma once
-#include "MyQueue.hpp"
-#include "Command.h"
+#include "CommandQueue.h"
 #include "vector.hpp"
 #include "Session.h"
 
 class Engine
 {
-	MyQueue<Command> commands;
+public:
+
+	void addCommand(Command* newCommand);
+	void getMessege() const;
+
+private:
+
+	CommandQueue commands;
 	Vector<Session> openedSessions;
 };

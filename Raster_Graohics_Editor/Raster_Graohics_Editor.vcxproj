@@ -129,12 +129,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bitset.cpp" />
+    <ClCompile Include="Close.cpp" />
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="CommandQueue.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageCollection.cpp" />
     <ClCompile Include="ImageFactory.cpp" />
+    <ClCompile Include="load.cpp" />
     <ClCompile Include="Pixel.cpp" />
     <ClCompile Include="RasterGraphicsEditor.cpp" />
     <ClCompile Include="MyString.cpp" />
@@ -147,12 +149,14 @@
   <ItemGroup>
     <ClInclude Include="..\..\PartialFunctionOld\PartialFunction\vector.hpp" />
     <ClInclude Include="Bitset.h" />
+    <ClInclude Include="Close.h" />
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandFactory.h" />
     <ClInclude Include="CommandQueue.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageCollection.h" />
     <ClInclude Include="ImageFactory.h" />
+    <ClInclude Include="load.h" />
     <ClInclude Include="MyQueue.hpp" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="PBM.h" />

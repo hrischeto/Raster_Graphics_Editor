@@ -1,4 +1,3 @@
-#pragma once
 #include "PBM.h"
 
 PBM::PBM(const char* filepath, int magicNumber, int width, int height, DynamicSet** data):Image(filepath,magicNumber,width,height)
@@ -57,6 +56,7 @@ void PBM::copyFrom(const PBM& other)
 	{
 		if (other._data[i] == nullptr)
 			_data[i] = nullptr;
+		else
 		_data[i] = new DynamicSet(*other._data[i]);
 	}
 }

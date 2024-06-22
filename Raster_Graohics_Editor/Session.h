@@ -2,11 +2,19 @@
 #include "Image.h"
 #include "Command.h"
 #include "ImageCollection.h"
+
 class Session
 {
 public:
-	friend class Command;
+	Session();
+
+	void addImage(const char* filepath);
+	
+	void setID(unsigned id);
+	int getNumberOfImages() const;
+
+	const Image& operator[](int index) const;
 private:
-	unsigned id = 0;
+	unsigned _id = 0;
 	ImageCollection	loadedImages;
 };

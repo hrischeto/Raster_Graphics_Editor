@@ -13,9 +13,24 @@ Load::Load(std::stringstream& ss)
 		ss >> filepath;
 		newSession.addImage(filepath.c_str());
 	}
+	id++;
+	newSession.setID(id);
 }
+
 void Load::execute(Vector<Session>& openedSessions)
 {
-	newSession.setID(openedSessions.getSize());
 	openedSessions.push_back(std::move(newSession));
+}
+
+void Load::printMessege() const
+{
+	std::cout << "New session with id " << id << " started." << std::endl;
+	std::cout << "Added images: ";
+
+	for (int i = 0;i < newSession.getNumberOfImages();i++)
+	{
+		std::cout << newSession[i].getName() << " ";
+	}
+	
+	std::cout << std::endl;
 }

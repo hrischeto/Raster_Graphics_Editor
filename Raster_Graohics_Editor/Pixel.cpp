@@ -1,4 +1,3 @@
-#pragma once
 #include "Pixel.h"
 
 Pixel::Pixel() : Pixel(0, 0, 0) {}

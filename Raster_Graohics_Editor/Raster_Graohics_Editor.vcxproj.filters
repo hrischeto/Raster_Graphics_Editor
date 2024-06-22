@@ -60,6 +60,12 @@
     <ClCompile Include="Pixel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="load.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Close.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -108,6 +114,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ImageFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="load.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Close.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
