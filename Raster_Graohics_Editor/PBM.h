@@ -6,7 +6,7 @@ class PBM : public Image
 {
 
 public:
-	PBM(const char* filepath, int magicNumber, int width, int height, DynamicSet* data);
+	PBM(const char* filepath, int magicNumber, int width, int height, DynamicSet** data);
 	PBM(const PBM& other);
 	PBM(PBM&& other) noexcept;
 	
@@ -23,6 +23,6 @@ private:
 	void moveFrom(PBM&& other);
 	void free();
 
-	DynamicSet* data;
+	DynamicSet** _data = nullptr;
 };
 
