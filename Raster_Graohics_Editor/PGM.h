@@ -20,7 +20,7 @@ private:
 	void moveFrom(PGM&& other);
 	void free();
 
-	uint16_t maxValue = 0;
-	uint16_t** data;
+	uint16_t _maxValue = 0;
+	uint16_t** _data;
 };
 
