@@ -7,17 +7,17 @@
 class PPM : public Image
 {
 public:
+
 	PPM(const char* filepath,  uint16_t magicNumber, int width, int height, uint16_t maxValue, Pixel** data);
 	PPM(const PPM& other);
-	PPM(PPM&& other);
+	PPM(PPM&& other) noexcept;
 
 	PPM& operator=(const PPM& other);
-	PPM& operator=(PPM&& other);
+	PPM& operator=(PPM&& other) noexcept;
 
-	~PPM();
+	~PPM() noexcept;
 
 	Image* clone() const override;
-
 
 private:
 
@@ -25,7 +25,7 @@ private:
 	void moveFrom(PPM&& other);
 	void free();
 
-	unsigned maximumValue = 0;
-	Pixel** data;
+	unsigned _maxValue = 0;
+	Pixel** _data=nullptr;
 	};
 

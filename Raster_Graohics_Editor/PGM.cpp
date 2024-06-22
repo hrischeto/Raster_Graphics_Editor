@@ -51,14 +51,21 @@ Image* PGM::clone() const
 
 void PGM::copyFrom(const PGM& other)
 {
-
 	_data = new uint16_t * [height] {nullptr};
 
 	for (int i = 0;i < height;i++)
 	{
 		if (other._data[i] == nullptr)
 			_data[i] = nullptr;
-		_data[i] = new uint16_t(*other._data[i]);
+		else 
+		{
+			_data[i] = new uint16_t[width];
+
+			for (int j = 0;j < width;j++)
+			{
+				_data[i][j] = other._data[i][j];
+			}
+		}
 	}
 }
 void PGM::moveFrom(PGM&& other)

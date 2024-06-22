@@ -21,6 +21,6 @@ private:
 	void free();
 
 	uint16_t _maxValue = 0;
-	uint16_t** _data;
+	uint16_t** _data=nullptr;
 };
 
