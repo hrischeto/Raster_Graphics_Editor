@@ -15,7 +15,7 @@ public:
 	void addImage(Image* image);
 	//void addImage(const Image& image);
 
-	unsigned getSize();
+	unsigned getSize() const;
 
 	const Image* operator[](unsigned index) const;
 	Image* operator[](unsigned index);

@@ -1,7 +1,7 @@
 #pragma once
 #include "Command.h"
 #include "Session.h"
-class Load : public Command
+class Load :public Command
 {
 public:
 

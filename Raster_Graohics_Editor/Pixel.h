@@ -4,7 +4,7 @@
 struct Pixel
 {
 public:
-	Pixel(uint16_t red, uint16_t green, uint16_t blue) :red(red), green(green), blue(blue) {}
+	Pixel(uint16_t red, uint16_t green, uint16_t blue);
 	Pixel();
 
 	uint16_t red = 0;

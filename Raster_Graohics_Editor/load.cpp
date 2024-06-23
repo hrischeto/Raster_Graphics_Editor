@@ -15,6 +15,8 @@ Load::Load(std::stringstream& ss)
 	}
 	id++;
 	newSession.setID(id);
+
+	currentSession = id;
 }
 
 void Load::execute(Vector<Session>& openedSessions)

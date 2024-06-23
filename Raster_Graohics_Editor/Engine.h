@@ -9,10 +9,11 @@ class Engine
 {
 public:
 	void addCommand(Command* newCommand);
-	void getMessege() const;
-
+	//void getMessege();
+	CommandQueue* getQueue();
+	Vector<Session>& getSessions();
 private:
 
-	CommandQueue commands;
 	Vector<Session> openedSessions;
+	CommandQueue queue;
 };

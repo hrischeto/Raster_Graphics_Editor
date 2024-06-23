@@ -2,6 +2,7 @@
 #include <sstream>
 #include "Engine.h"
 #include "CommandFactory.h"
+#include "Save.h"
 
 constexpr int BUFFER_SIZE = 100;
 
@@ -16,6 +17,15 @@ bool processInput(std::stringstream& ss, Engine& engine)
 	{
 		//might ask to save
 		return 0;
+	}
+	else if (command == "save")
+	{
+		Save newCommand(factory.currentSession, engine.getQueue());
+		newCommand.execute(engine.getSessions());
+	}
+	else if (command == "help")
+	{
+		//print all commands
 	}
 	else
 	{

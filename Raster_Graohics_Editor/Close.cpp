@@ -1,8 +1,11 @@
 #include "Close.h"
 
-Close::Close(unsigned session) :_session(session) {}
+Close::Close(unsigned session) 
+{
+	currentSession = session;
+}
 
 void Close::execute(Vector<Session>& openedSessions)
 {
-	openedSessions.erase(_session-1);
+	openedSessions.erase(currentSession-1);
 }

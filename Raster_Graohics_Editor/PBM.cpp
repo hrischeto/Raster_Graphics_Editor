@@ -7,6 +7,9 @@ PBM::PBM(const char* filepath, int magicNumber, int width, int height, DynamicSe
 
 	_data = data;
 	data = nullptr;
+
+	monochromeCheck = 1;
+	grayscaleCheck = 1;
 }
 
 PBM::PBM(const PBM& other):Image(other)

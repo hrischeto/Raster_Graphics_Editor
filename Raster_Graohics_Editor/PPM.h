@@ -19,6 +19,9 @@ public:
 
 	Image* clone() const override;
 
+	bool isGray() const override;
+
+	void grayscale() override;
 private:
 
 	void copyFrom(const PPM& other);

@@ -133,6 +133,7 @@
     <ClCompile Include="Command.cpp" />
     <ClCompile Include="CommandFactory.cpp" />
     <ClCompile Include="CommandQueue.cpp" />
+    <ClCompile Include="Grayscale.cpp" />
     <ClCompile Include="Image.cpp" />
     <ClCompile Include="ImageCollection.cpp" />
     <ClCompile Include="ImageFactory.cpp" />
@@ -144,6 +145,7 @@
     <ClCompile Include="PGM.cpp" />
     <ClCompile Include="PPM.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="Save.cpp" />
     <ClCompile Include="Session.cpp" />
     <ClCompile Include="SessionInfo.cpp" />
     <ClCompile Include="Switch.cpp" />
@@ -155,6 +157,7 @@
     <ClInclude Include="Command.h" />
     <ClInclude Include="CommandFactory.h" />
     <ClInclude Include="CommandQueue.h" />
+    <ClInclude Include="Grayscale.h" />
     <ClInclude Include="Image.h" />
     <ClInclude Include="ImageCollection.h" />
     <ClInclude Include="ImageFactory.h" />
@@ -166,6 +169,7 @@
     <ClInclude Include="Pixel.h" />
     <ClInclude Include="PPM.h" />
     <ClInclude Include="Engine.h" />
+    <ClInclude Include="Save.h" />
     <ClInclude Include="Session.h" />
     <ClInclude Include="SessionInfo.h" />
     <ClInclude Include="Switch.h" />

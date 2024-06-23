@@ -80,3 +80,38 @@ void PPM::free()
 
 	delete[] _data;
 	}
+
+bool PPM::isGray() const
+{
+	for (int i = 0;i < height;i++)
+	{
+		for (int j = 0;j < width;j++)
+		{
+			if ((_data[i][j].red != _data[i][j].green)
+				|| (_data[i][j].red != _data[i][j].blue)
+				|| (_data[i][j].green != _data[i][j].blue))
+			{
+				grayscaleCheck = 1;
+				return false;
+			}
+				
+		}
+	}
+	grayscaleCheck = 1;
+	return true;
+}
+
+void PPM::grayscale()
+{
+	for (int i = 0;i < height;i++)
+	{
+		for (int j = 0;j < width;j++)
+		{
+			uint16_t gray = _data[i][j].red * 0. + _data[i][j].green *0.59 +_data[i][j].blue * 0.11;
+			_data[i][j].red = gray;
+			_data[i][j].green = gray;
+			_data[i][j].blue = gray;
+
+		}
+	}
+}

@@ -2,6 +2,8 @@
 #include "load.h"
 #include "Close.h"
 #include "Switch.h"
+#include "Grayscale.h"
+#include "Save.h"
 
 Command* CommandFactory::operator()(MyString command, std::stringstream& ss)
 {
@@ -29,6 +31,6 @@ Command* CommandFactory::operator()(MyString command, std::stringstream& ss)
 
 	else if (command == "grayscale")
 	{
-
+		return new Grayscale(currentSession);
 	}
 }

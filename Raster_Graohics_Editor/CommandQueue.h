@@ -1,6 +1,6 @@
 #pragma once
 #include "Command.h"
-class CommandQueue
+class CommandQueue //not a queue
 {
 	public:
 		CommandQueue();
@@ -11,15 +11,16 @@ class CommandQueue
 		CommandQueue(CommandQueue&& other);
 		CommandQueue& operator=(CommandQueue&& other);
 
-		void push(const CommandQueue& obj);
-		void push(CommandQueue&& obj);
-		void pop();
+		void push(Command* obj);
+		void pop(int index);
 
-		const CommandQueue& peek() const;
+		Command* getCommand(int index);
+
 		bool isEmpty() const;
 
 		~CommandQueue();
 
+		int getSize() const;
 private:
 
 	void moveFrom(CommandQueue&& other);

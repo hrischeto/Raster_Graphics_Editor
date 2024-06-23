@@ -9,3 +9,23 @@ const MyString& Image::getName() const
 {
 	return Filepath;
 }
+
+bool Image:: isGray() const
+{
+	grayscaleCheck = 1;
+	return true;
+}
+
+bool Image::monochromeChecked() const
+{
+	return monochromeCheck;
+}
+bool Image::grayscaleChecked() const
+{
+	return grayscaleCheck;
+}
+
+void Image::grayscale()
+{
+
+}

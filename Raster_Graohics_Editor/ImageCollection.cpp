@@ -54,7 +54,7 @@ void ImageCollection::addImage(Image* image)
 //	addImage(cloned);
 //}
 
-unsigned ImageCollection::getSize()
+unsigned ImageCollection::getSize() const  
 {
 	return size;
 }

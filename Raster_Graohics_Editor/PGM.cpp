@@ -9,6 +9,8 @@ PGM::PGM(const char* filepath, int magicNumber, int width, int height, uint16_t 
 	_maxValue = maxValue;
 	_data = data;
 	data = nullptr;
+
+	grayscaleCheck = 1;
 }
 PGM::PGM(const PGM& other) :Image(other)
 {

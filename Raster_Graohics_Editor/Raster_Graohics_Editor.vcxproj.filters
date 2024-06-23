@@ -72,6 +72,12 @@
     <ClCompile Include="SessionInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Grayscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Save.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -132,6 +138,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SessionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grayscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Save.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
