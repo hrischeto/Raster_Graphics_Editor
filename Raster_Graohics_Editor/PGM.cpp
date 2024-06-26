@@ -84,3 +84,8 @@ void PGM::free()
 		delete _data[i];
 	delete[] _data;
 }
+
+void PGM::serialize() const
+{
+
+}

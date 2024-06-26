@@ -16,6 +16,8 @@ public:
 	~PBM() noexcept;
 
 	Image* clone() const override;
+	void serialize() const override;
+
 private:
 
 	void copyFrom(const PBM& other);

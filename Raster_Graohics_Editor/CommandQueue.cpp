@@ -125,12 +125,12 @@ CommandQueue& CommandQueue::operator=(const CommandQueue& other)
 	return *this;
 }
 
-CommandQueue::CommandQueue(CommandQueue&& other)
+CommandQueue::CommandQueue(CommandQueue&& other) noexcept
 {
 	moveFrom(std::move(other));
 }
 
-CommandQueue& CommandQueue::operator=(CommandQueue&& other)
+CommandQueue& CommandQueue::operator=(CommandQueue&& other) noexcept
 {
 	if (this != &other)
 	{
@@ -140,7 +140,7 @@ CommandQueue& CommandQueue::operator=(CommandQueue&& other)
 	return *this;
 }
 
-CommandQueue::~CommandQueue()
+CommandQueue::~CommandQueue() noexcept
 {
 	free();
 }

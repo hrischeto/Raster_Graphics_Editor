@@ -45,7 +45,7 @@ static void getBasicInfo(std::ifstream& ifs, int& magicNumber, int& width, int& 
 }
 
 
-static void readP1Matrix(std::ifstream& ifs, int width , int height, DynamicSet* data)
+static void readP1Matrix(std::ifstream& ifs, int width , int height, DynamicSet** data)
 {
 	uint8_t bit = 0;
 	for (int i = 0;i < height;i++)
@@ -54,7 +54,7 @@ static void readP1Matrix(std::ifstream& ifs, int width , int height, DynamicSet*
 		{
 			ifs >> bit;
 			if (bit)
-				data[i].add(j);
+				data[i][j].add(j);
 		}
 
 	}
@@ -102,7 +102,7 @@ static Image* readP1(std::ifstream& ifs, int width, int height, const char* file
 	if (!filepath)
 		throw std::runtime_error("Nullptr recieved");
 
-	DynamicSet* data = new DynamicSet[height];
+	DynamicSet** data = new DynamicSet*[height];
 	readP1Matrix(ifs, width, height, data);
 	return new PBM(filepath, magicNumber, width, height, data);
 }

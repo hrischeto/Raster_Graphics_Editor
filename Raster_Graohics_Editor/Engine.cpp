@@ -2,7 +2,7 @@
 
 void Engine::addCommand(Command* newCommand)
 {
-	queue.push(std::move(*(newCommand)));
+	queue.push(newCommand);
 }
 
 CommandQueue* Engine::getQueue()

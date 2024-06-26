@@ -19,6 +19,8 @@ public:
 
 	Image* clone() const override;
 
+	void serialize() const override;
+
 	bool isGray() const override;
 
 	void grayscale() override;

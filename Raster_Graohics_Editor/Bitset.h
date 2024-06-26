@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+
 class DynamicSet
 {
 	uint8_t* buckets = nullptr;
@@ -24,5 +25,6 @@ public:
 	void print() const;
 	friend DynamicSet UnionOfSets(const DynamicSet& lhs, const DynamicSet& rhs);
 	friend DynamicSet IntersectionOfSets(const DynamicSet& lhs, const DynamicSet& rhs);
+	friend std::ostream& operator<<(std::ostream& os, DynamicSet& ref);
 
 };

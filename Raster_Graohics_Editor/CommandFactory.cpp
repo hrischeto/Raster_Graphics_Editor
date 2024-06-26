@@ -25,7 +25,7 @@ Command* CommandFactory::operator()(MyString command, std::stringstream& ss)
 		 Switch newCommand(ss);
 
 		 newCommand.execute(currentSession, openedSessions);
-		 newCommand.printMessege();
+		 //newCommand.printMessege();
 		return nullptr;
 	}
 

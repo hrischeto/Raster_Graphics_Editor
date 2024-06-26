@@ -1,4 +1,5 @@
 #include "PBM.h"
+#include <fstream>
 
 PBM::PBM(const char* filepath, int magicNumber, int width, int height, DynamicSet** data):Image(filepath,magicNumber,width,height)
 {
@@ -73,4 +74,21 @@ void PBM::free()
 	for (int i = 0; i < height; i++)
 		delete _data[i];
 	delete[] _data;
+}
+
+void PBM::serialize() const
+{
+	std::ofstream ofs(Filepath.c_str());
+
+	ofs << 'P';
+	ofs << magicNumber << "\n";
+	ofs << width << " " << height;
+	for (int i = 0;i < height;i++)
+	{
+		for (int j = 0;j < width;j++)
+		{
+			ofs << _data[i][j]<<"\n";
+		}
+	}
+
 }

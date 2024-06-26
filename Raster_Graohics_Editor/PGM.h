@@ -13,6 +13,8 @@ public:
 	~PGM() noexcept;
 
 	Image* clone() const override;
+	void serialize() const override;
+
 
 private:
 

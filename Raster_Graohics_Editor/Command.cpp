@@ -2,7 +2,7 @@
 
 Command::~Command() = default;
 
-void Command::printMessege() const
+unsigned Command::getSession() const
 {
-
+	return currentSession;
 }

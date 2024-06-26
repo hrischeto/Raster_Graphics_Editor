@@ -6,10 +6,10 @@ class CommandQueue //not a queue
 		CommandQueue();
 
 		CommandQueue(const CommandQueue& other);
-		CommandQueue& operator=(const CommandQueue& other);
+		CommandQueue& operator=(const CommandQueue& other) ;
 
-		CommandQueue(CommandQueue&& other);
-		CommandQueue& operator=(CommandQueue&& other);
+		CommandQueue(CommandQueue&& other)noexcept;
+		CommandQueue& operator=(CommandQueue&& other) noexcept;
 
 		void push(Command* obj);
 		void pop(int index);
@@ -18,7 +18,7 @@ class CommandQueue //not a queue
 
 		bool isEmpty() const;
 
-		~CommandQueue();
+		~CommandQueue() noexcept;
 
 		int getSize() const;
 private:

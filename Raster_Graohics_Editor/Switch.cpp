@@ -15,7 +15,3 @@ void Switch::execute(unsigned& currentSession, unsigned openedSessions)
 
 	currentSession = newIndex;
 }
-void Switch::printMessege() const
-{
-	std::cout << "Switched to session with ID: " << newIndex << "." << std::endl;
-}

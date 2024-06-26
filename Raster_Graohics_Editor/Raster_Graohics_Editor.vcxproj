@@ -162,7 +162,6 @@
     <ClInclude Include="ImageCollection.h" />
     <ClInclude Include="ImageFactory.h" />
     <ClInclude Include="load.h" />
-    <ClInclude Include="MyQueue.hpp" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="PBM.h" />
     <ClInclude Include="PGM.h" />

@@ -24,15 +24,8 @@ void Load::execute(Vector<Session>& openedSessions)
 	openedSessions.push_back(std::move(newSession));
 }
 
-void Load::printMessege() const
+unsigned Load::getId() const
 {
-	std::cout << "New session with id " << id << " started." << std::endl;
-	std::cout << "Added images: ";
-
-	for (int i = 0;i < newSession.getNumberOfImages();i++)
-	{
-		std::cout << newSession[i].getName() << " ";
-	}
-	
-	std::cout << std::endl;
+	return id;
 }
+

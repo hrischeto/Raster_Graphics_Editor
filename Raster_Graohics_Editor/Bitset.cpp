@@ -114,8 +114,14 @@ DynamicSet IntersectionOfSets(const DynamicSet& lhs, const DynamicSet& rhs)
 		result.buckets[i] = lhs.buckets[i] & rhs.buckets[i];
 	return result;
 }
-
-int main()
+std::ostream& operator<<(std::ostream& os, DynamicSet& ref)
 {
+	for (int i = 0;i <= ref.N;i++)
+	{
+		if (ref.contains(i))
+			os << 1 << " ";
+		else
+			os << 0 << " ";
 
+	}
 }

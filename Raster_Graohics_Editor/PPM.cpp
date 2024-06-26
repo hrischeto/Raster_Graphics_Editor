@@ -115,3 +115,8 @@ void PPM::grayscale()
 		}
 	}
 }
+
+void PPM::serialize() const
+{
+
+}

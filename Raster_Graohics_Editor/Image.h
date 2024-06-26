@@ -15,7 +15,7 @@ public:
 	virtual bool isGray() const;
 	virtual void grayscale();
 
-	virtual void serialize() = 0;
+	virtual void serialize() const =0;
 protected:
 	MyString Filepath;
 

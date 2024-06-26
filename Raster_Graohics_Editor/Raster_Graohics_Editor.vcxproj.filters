@@ -95,9 +95,6 @@
     <ClInclude Include="Command.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MyQueue.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ImageCollection.h">
       <Filter>Header Files</Filter>
     </ClInclude>
