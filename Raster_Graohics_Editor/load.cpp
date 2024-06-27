@@ -2,6 +2,8 @@
 #include "ImageFactory.h"
 #include <sstream>
 
+unsigned Load::id = 0;
+
 Load::Load(std::stringstream& ss)
 {
 	if (ss.eof())

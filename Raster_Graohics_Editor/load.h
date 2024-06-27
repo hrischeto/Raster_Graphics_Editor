@@ -7,7 +7,7 @@ public:
 
 	Load(std::stringstream& ss);
 	void execute(Vector<Session>& openedSessions) override;
-	void printMessege() const override;
+	//void printMessege() const override;
 	unsigned getId() const;
 
 private:
@@ -16,4 +16,3 @@ private:
 	static unsigned id;
 };
 
-unsigned Load::id = 0;

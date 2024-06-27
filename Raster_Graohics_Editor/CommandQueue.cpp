@@ -28,6 +28,10 @@ bool CommandQueue::isEmpty() const
 	return size == 0;
 }
 
+int CommandQueue::getSize() const
+{
+	return size;
+}
 
 
 Command* CommandQueue:: getCommand(int index)

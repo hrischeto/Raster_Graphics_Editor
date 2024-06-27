@@ -12,7 +12,7 @@ static void getMaxValue(std::ifstream& ifs, uint16_t& maxValue);
 static void getBasicInfo(std::ifstream& ifs, int& magicNumber, int& width, int& height);
 
 
-static void readP1Matrix(std::ifstream& ifs, int width, int height, DynamicSet* data);
+static void readP1Matrix(std::ifstream& ifs, int width, int height, DynamicSet** data);
 
 static void readP2Matrix(std::ifstream& ifs, int width, int height, uint16_t& maxValue, uint16_t** data);
 
@@ -25,5 +25,4 @@ static Image* readP2(std::ifstream& ifs, int width, int height, const char* file
 
 static Image* readP3(std::ifstream& ifs, int width, int height, const char* filepath, int magicNumber);
 
-
-static Image* ImageFactory(const char* filepath);
+Image* imageFactory(const char* filepath);

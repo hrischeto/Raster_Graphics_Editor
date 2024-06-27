@@ -2,7 +2,7 @@
 #include "ImageFactory.h"
 void Session::addImage(const char* filepath)
 {
-	loadedImages.addImage(ImageFactory(filepath));
+	loadedImages.addImage(imageFactory(filepath));
 }
 
 void Session::setID(unsigned id)

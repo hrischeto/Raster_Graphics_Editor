@@ -34,7 +34,8 @@ bool processInput(std::stringstream& ss, Engine& engine)
 		return 1;
 	}
 }
-int main()
+
+void application()
 {
 	Engine engine;
 
@@ -45,6 +46,10 @@ int main()
 	{
 		std::cin >> input;
 		std::stringstream ss(input.c_str());
-		run=processInput(ss,engine);
+		run = processInput(ss, engine);
 	}
+}
+int main()
+{
+	application();
 }

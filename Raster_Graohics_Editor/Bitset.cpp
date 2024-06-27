@@ -124,4 +124,5 @@ std::ostream& operator<<(std::ostream& os, DynamicSet& ref)
 			os << 0 << " ";
 
 	}
+	return os;
 }

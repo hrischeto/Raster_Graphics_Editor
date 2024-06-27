@@ -1,51 +1,5 @@
-﻿  Bitset.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Bitset.cpp(14,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Bitset.cpp(86,20): warning C4018: '<=': signed/unsigned mismatch
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Bitset.cpp(100,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Bitset.cpp(105,34): warning C4018: '<': signed/unsigned mismatch
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Bitset.cpp(114,20): warning C4018: '<': signed/unsigned mismatch
-  Command.cpp
-  CommandFactory.cpp
-  CommandQueue.cpp
-  Image.cpp
-  ImageCollection.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\ImageCollection.cpp(60,9): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\ImageCollection.cpp(102,18): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
-  ImageFactory.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\ImageFactory.cpp(105,21): error C2512: 'DynamicSet': no appropriate default constructor available
-  Pixel.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Pixel.cpp(5,8): error C2084: function 'Pixel::Pixel(uint16_t,uint16_t,uint16_t)' already has a body
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Pixel.h(7,2): message : see previous definition of '{ctor}'
-  RasterGraphicsEditor.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\RasterGraphicsEditor.cpp(12,34): warning C4305: 'argument': truncation from 'int' to '_Elem'
-          with
-          [
-              _Elem=char
-          ]
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\RasterGraphicsEditor.cpp(12,34): warning C4309: 'argument': truncation of constant value
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(44,1): error C2092: 'Target of operator new()' array element type cannot be function or abstract class type
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(42,1): message : while compiling class template member function 'MyQueue<Command>::MyQueue(void)'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Engine.h(11,1): message : see the first reference to 'MyQueue<Command>::MyQueue' in 'Engine::Engine'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Engine.h(9,19): message : see reference to class template instantiation 'MyQueue<Command>' being compiled
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(44,9): error C2259: 'Command': cannot instantiate abstract class
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Command.h(5,7): message : see declaration of 'Command'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(44,9): message : due to following members:
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(44,9): message : 'void Command::execute(Vector<Session> &)': is abstract
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Command.h(7,15): message : see declaration of 'Command::execute'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyQueue.hpp(44,9): error C2248: 'Command::~Command': cannot access private member declared in class 'Command'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Command.h(8,11): message : see declaration of 'Command::~Command'
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\Command.h(5,7): message : see declaration of 'Command'
-  MyString.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyString.cpp(25,49): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyString.cpp(32,49): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyString.cpp(118,59): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\MyString.cpp(146,43): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-  PBM.cpp
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\PBM.cpp(53,31): error C2143: syntax error: missing ';' before '['
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\PBM.cpp(53,32): error C2337: 'height': attribute not found
-C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\PBM.cpp(54,19): warning C4018: '<': signed/unsigned mismatch
-  PGM.cpp
-  PPM.cpp
-  Engine.cpp
-  Session.cpp
+﻿  CommandFactory.cpp
+  load.cpp
   Generating Code...
+C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\Raster_Graohics_Editor\CommandFactory.cpp(36): warning C4715: 'CommandFactory::operator()': not all control paths return a value
+  Raster_Graohics_Editor.vcxproj -> C:\Users\hrisi\source\repos\OOP\Raster_Graohics_Editor\x64\Debug\Raster_Graphics_Editor.exe

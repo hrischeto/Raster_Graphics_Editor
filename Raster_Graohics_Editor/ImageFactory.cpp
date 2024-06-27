@@ -136,7 +136,7 @@ static Image* readP3(std::ifstream& ifs, int width, int height, const char* file
 	
 }
 
-static Image* ImageFactory(const char* filepath)
+Image* imageFactory(const char* filepath)
 {
 	if (!filepath)
 		throw std::runtime_error("Nullptr recieved");
